@@ -1,4 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Main from './main';
 
-ReactDOM.render(<h1>HOla</h1>, document.getElementById("app"))
+import './styles/styles.scss';
+
+ReactDOM.render(<Main />, document.getElementById('app'));
