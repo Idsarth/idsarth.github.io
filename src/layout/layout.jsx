@@ -5,7 +5,7 @@ const Layout = (props) => {
   const { children } = props;
   return (
     <div>
-      <h2>Layout</h2>
+      {/* <h2>Layout</h2> */}
       {children}
     </div>
   );

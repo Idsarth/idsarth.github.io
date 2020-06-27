@@ -1,13 +1,15 @@
 @import "./theme/colors";
 @import "./variables/variables";
 @import "./functions/path";
-@import "./global/global";
 
 @import "./mixins/from";
+@import "./global/global";
 
 @import "./base/base";
 
 @import "./hacks/hacks";
 @import "./layout/layout";
+
 @import "./component/buttons";
 @import "./component/title";
+@import "./component/navbar";

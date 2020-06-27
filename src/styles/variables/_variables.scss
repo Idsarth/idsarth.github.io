@@ -3,10 +3,9 @@
   --scroll-radius: calc(var(--scroll-size) / 2);
 
   --header-height: 5rem;
-  --max-width: 1440px;
 
-  --body-font: 'Open Sans', sans-serif;;
-  --heading-font: 'Righteous', cursive;
+  --body-font: 'Open Sans', sans-serif;
+  --heading-font: 'Poppins', sans-serif;
 
   --box-shadow-dark: rgba(40, 45, 49, 0.2) 0px 4px 8px 0px;
   --box-shadow-normal: rgba(174, 190, 205, 0.3) 0px 2px 4px 0px;
@@ -27,8 +26,9 @@
 }
 
 $breakpoints: (
-  small   : 360px,
-  medium  : 640px,
-  large   : 1024px,
-  xlarge  : 1440px,
+  xs : 320px,
+  sm : 540px,
+  md : 720px,
+  lg : 960px,
+  xl : 1140px
 )
