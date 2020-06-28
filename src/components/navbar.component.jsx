@@ -9,8 +9,8 @@ const NavBar = () => {
   };
 
   return (
-    <header className="container l-navbar">
-      <nav className="navbar">
+    <header className="l-navbar">
+      <nav className="container navbar">
         <div className="navbar-brand">
           <span className="navbar-name">Idsarth</span>
         </div>

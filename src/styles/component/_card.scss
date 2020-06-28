@@ -39,10 +39,6 @@
     text-align: center;
   }
 
-  &-footer {
-
-  }
-
   &-details {
     text-align: center;
     display: flex;
@@ -63,5 +59,51 @@
     margin-left: .4rem;
   }
 
+  @include from(md) {
+    &-body {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    &-avatar {
+      width: 30%;
+    }
+    &-info {
+      margin-top: 0;
+      width: 70%;
+      padding-left: 1.5rem;
+    }
+    &-details {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: .7rem;
+    }
+    &-title {
+      text-align: left;
+    }
 
+    &-description {
+      margin: .9rem 0;
+      text-align: left;
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .button {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  @include from(lg) {
+    &-avatar {
+      width: 20%;
+    }
+    &-info {
+      width: 80%;
+    }
+  }
 }

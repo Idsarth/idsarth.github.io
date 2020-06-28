@@ -1,8 +1,9 @@
 import React from 'react';
-import { FaAward, FaUserAstronaut } from 'react-icons/fa';
+import { FaAward, FaUserAstronaut, FaGithub } from 'react-icons/fa';
 
 // Import components
 import Category from './category.component';
+import Button from './button.component';
 
 const Card = (props) => {
   const {
@@ -35,8 +36,15 @@ const Card = (props) => {
           <FaUserAstronaut size={20} color="#c8cdd0" />
         </Category>
         <Category
-          title=""
-          subtitle=""
+          title="Github"
+          subtitle="Projects"
+        >
+          <FaGithub size={20} color="#c8cdd0" />
+        </Category>
+
+        <Button
+          message="Download CV"
+          onClick={() => {}}
         />
       </div>
     </div>
