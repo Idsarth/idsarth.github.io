@@ -1,0 +1,51 @@
+.card {
+  background-color: var(--accent-color);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+
+  &-profile {
+    margin-top: 100px;
+  }
+
+  &-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-info {
+    margin-left: 2rem;
+  }
+
+  &-description {
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    margin: .7rem 0;
+  }
+
+  &-title {
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+  }
+
+  &-subtitle {
+    color: var(--primary-color);
+    font-size: var(--small-font-size);
+    margin-top: .8rem;
+    display: inline-block;
+  }
+
+  &-footer {
+
+  }
+
+
+
+
+
+  &-details {
+
+  }
+
+
+}
