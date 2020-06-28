@@ -1,5 +1,5 @@
 import React from 'react';
-import { GrMapLocation } from 'react-icons/gr';
+import { FaAddressCard } from 'react-icons/fa';
 
 import Title from '../components/title.component';
 import Card from '../components/card.component';
@@ -9,7 +9,7 @@ const HomePage = () => (
     <Title title="About Me" />
     <Card className="card-profile" title="Idsarth Juarez">
       <div className="card-details">
-        <GrMapLocation color="#25ca7f" />
+        <FaAddressCard className="card-icon" />
         <span className="card-subtitle">Managua, Nicaragua</span>
       </div>
       <p className="card-description">
@@ -22,6 +22,7 @@ const HomePage = () => (
         ReactJS, React Native, NextJS, NodeJS, Graphql, Flutter, Golang and Python.
       </p>
     </Card>
+    <div style={{ marginBottom: '100rem' }} />
   </main>
 );
 

@@ -4,12 +4,11 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  //background: red;
 
   &-name {
-    margin-left: 1rem;
     font-size: var(--h3-font-size);
     color: var(--text-color);
+    font-weight: bold;
   }
 
   &-avatar {
@@ -47,13 +46,9 @@
   }
 
   &-list {
-    height: 150px;
     width: 100%;
-    margin-top: 1rem;
-    position: relative;
-    top: -200%;
-    left: 0;
-    transition: all .3s ease-in-out;
+    padding: .5rem 0;
+    transform: scale(0);
     z-index: var(--z-back);
   }
 
@@ -72,8 +67,8 @@
   }
 
   &-show {
-    top: 0;
-    transition: all .3s ease-in-out;
+    transition: transform .26s cubic-bezier(.17, .67, .62, 1.6);
+    transform: scale(1);
   }
 
   @include from(sm) {
@@ -94,7 +89,7 @@
     }
     &-item {
       margin-bottom: 0;
-      margin-right: 1.5 rem;
+      margin-right: 1.5rem;
     }
     &-link {
 

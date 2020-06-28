@@ -5,7 +5,7 @@ const Title = (props) => {
   return (
     <div className="title-content">
       <h2 className="title">{title}</h2>
-      <span className="title-decoration" />
+      <span />
     </div>
   );
 };

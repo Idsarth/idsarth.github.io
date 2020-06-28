@@ -1,0 +1,29 @@
+.category {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  &-circle {
+    padding: .8rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-info {
+    margin-left: 1rem;
+    h2 {
+      color: var(--text-color-lighter);
+      font-size: calc(var(--small-font-size));
+      font-weight: normal;
+    }
+
+    span {
+      color: var(--primary-color);
+      font-size: var(--smaller-font-size);
+    }
+  }
+}

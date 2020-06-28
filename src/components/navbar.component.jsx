@@ -12,10 +12,7 @@ const NavBar = () => {
     <header className="container l-navbar">
       <nav className="navbar">
         <div className="navbar-brand">
-          <div className="navbar-avatar">
-            <img src="https://abyeneregia.net/assets/img/theme/av.png" alt="Idsarth" />
-          </div>
-          <span className="navbar-name">Idsarth JR</span>
+          <span className="navbar-name">Idsarth</span>
         </div>
         <div onClick={handleShowNavbar} className="navbar-toggle">
           <FiMenu className="navbar-icon" size={30} />

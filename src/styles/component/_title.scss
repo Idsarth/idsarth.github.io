@@ -1,12 +1,57 @@
 .title {
   font-size: var(--h1-font-size);
-  color: var(--text-color);
+  color: var(--text-color-lighter);
   font-weight: bold;
+  position: relative;
+
   &-content {
     text-align: center;
-  }
+    position: relative;
 
-  &-decoration {
+    &::before, &::after {
+      content: '';
+      height: 1px;
+      width: 30px;
+      background-color: var(--primary-color);
+      position: absolute;
+      bottom: -19px;
+    }
 
+    &::after {
+      left: calc(50% + 16px);
+    }
+
+    &::before {
+      left: calc(50% - 46px);
+    }
+
+    span {
+      position: absolute;
+      width: 35px;
+      height: 17px;
+      left: calc(50% - 17px);
+      margin-top: 10px;
+
+      &::before, &::after {
+        content: '';
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: 0;
+        border: 2px solid var(--primary-color);
+      }
+
+      &::after {
+        left: auto;
+        border-radius: 50px 50px 50px 0;
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        left: 0;
+        border-radius: 50px 50px 0 50px;
+        transform: rotate(-45deg);
+      }
+    }
   }
 }

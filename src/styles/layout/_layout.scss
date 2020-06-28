@@ -2,9 +2,12 @@
   background-color: var(--body-color);
   height: var(--header-height);
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: var(--z-fixed);
 }
 
 .l-layout {
-  margin-top: 40px;
+  margin-top: calc(var(--header-height) + 60px);
 }

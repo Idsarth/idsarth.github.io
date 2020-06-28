@@ -1,8 +1,12 @@
 import React from 'react';
+import { FaAward, FaUserAstronaut } from 'react-icons/fa';
+
+// Import components
+import Category from './category.component';
 
 const Card = (props) => {
   const {
-    title, description, avatar, children, className,
+    title, avatar, children, className,
   } = props;
 
   return (
@@ -16,7 +20,25 @@ const Card = (props) => {
           {children}
         </div>
       </div>
-      <div className="card-footer" />
+      <div className="card-footer">
+        <Category
+          title="4 Years Job"
+          subtitle="Experience"
+        >
+          <FaAward size={20} color="#c8cdd0" />
+        </Category>
+
+        <Category
+          title="Freelance"
+          subtitle="Available"
+        >
+          <FaUserAstronaut size={20} color="#c8cdd0" />
+        </Category>
+        <Category
+          title=""
+          subtitle=""
+        />
+      </div>
     </div>
   );
 };
