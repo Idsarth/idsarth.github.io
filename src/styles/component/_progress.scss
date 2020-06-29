@@ -1,0 +1,30 @@
+.progress {
+  height: 6px;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 200px;
+  margin-bottom: 1.8rem;
+
+  &-percent {
+    height: 100%;
+    border-radius: 200px;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .4rem;
+
+    span {
+      color: var(--text-color-light);
+      font-size: calc(var(--small-font-size) + 3px);
+      font-weight: bold;
+      display: inline-block;
+    }
+    p {
+      color: var(--text-color-lighter);
+      font-weight: 600;
+      font-size: var(--small-font-size);
+    }
+  }
+}

@@ -81,21 +81,23 @@
     &-title {
       text-align: left;
     }
-
     &-description {
       margin: .9rem 0;
       text-align: left;
     }
-
     &-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     .button {
       margin-top: 0;
       margin-bottom: 1rem;
+    }
+    &-skill {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
     }
   }
   @include from(lg) {

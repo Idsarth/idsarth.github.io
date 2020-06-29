@@ -9,5 +9,8 @@
 }
 
 .l-layout {
-  margin-top: calc(var(--header-height) + 60px);
+  margin-top: calc(var(--header-height) + 20px);
+  @include from(sm) {
+    margin-top: calc(var(--header-height) + 60px);
+  }
 }
