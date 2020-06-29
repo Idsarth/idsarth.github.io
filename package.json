@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://idsarth.github.io/",
+  "homepage": "https://Idsarth.github.io/",
   "dependencies": {
     "cra-template": "1.0.3",
     "moment": "^2.27.0",
