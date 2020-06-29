@@ -1,6 +1,7 @@
 import HomePage from '../pages/home.page';
 import PortfolioPage from '../pages/portfolio.page';
 import ContactPage from '../pages/contact.page';
+import NotFound from '../pages/not-found.page';
 
 export default [
   {
@@ -20,5 +21,11 @@ export default [
     path: '/contact',
     exact: true,
     page: ContactPage,
+  },
+  {
+    id: 4,
+    path: '*',
+    exact: false,
+    page: NotFound,
   },
 ];
