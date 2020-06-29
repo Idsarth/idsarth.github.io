@@ -1,3 +1,0 @@
-@function img($img) {
-  @return url(#{$path-img}/#{$img});
-}
