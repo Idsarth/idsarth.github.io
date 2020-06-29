@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Idsarth.github.io/portfolio",
+  "homepage": "https://idsarth.github.io/",
   "dependencies": {
     "cra-template": "1.0.3",
     "moment": "^2.27.0",
@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn buil",
-    "deploy": "gh-pages -d build"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -b master -d build"
   },
   "browserslist": {
     "production": [
