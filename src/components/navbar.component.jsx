@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 
 const NavBar = () => {
@@ -18,14 +18,41 @@ const NavBar = () => {
           <FiMenu className="navbar-icon" size={30} />
         </div>
         <ul className={toggle ? 'navbar-list navbar-show' : 'navbar-list'}>
-          <li className="navbar-item navbar-item-active">
-            <Link className="navbar-link" to="/">About Me</Link>
+          <li className="navbar-item">
+            <NavLink
+              activeClassName="navbar-link-active"
+              className="navbar-link"
+              to="/"
+            >
+              About Me
+            </NavLink>
           </li>
           <li className="navbar-item">
-            <Link className="navbar-link" to="/portfolio">Portfolio</Link>
+            <NavLink
+              activeClassName="navbar-link-active"
+              className="navbar-link"
+              to="/resume"
+            >
+              Resume
+            </NavLink>
           </li>
           <li className="navbar-item">
-            <Link className="navbar-link" to="/contact">Contact Me</Link>
+            <NavLink
+              activeClassName="navbar-link-active"
+              className="navbar-link"
+              to="/portfolio"
+            >
+              Portfolio
+            </NavLink>
+          </li>
+          <li className="navbar-item">
+            <NavLink
+              activeClassName="navbar-link-active"
+              className="navbar-link"
+              to="/contact"
+            >
+              Contact Me
+            </NavLink>
           </li>
         </ul>
       </nav>

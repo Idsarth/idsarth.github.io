@@ -32,7 +32,6 @@ export default [
   {
     id: 5,
     path: '*',
-    exact: false,
     page: NotFound,
   },
 ];
