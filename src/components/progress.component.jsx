@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const Progress = (props) => {
   const { color, percent, skill } = props;

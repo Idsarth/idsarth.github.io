@@ -1,15 +1,12 @@
 import React from 'react';
 
 const Button = (props) => {
-  const { onClick, message } = props;
+  const { message } = props;
 
   return (
-    <input
-      type="button"
-      onClick={onClick}
-      value={message}
-      className="button button-success"
-    />
+    <a href="/CV.pdf" download target="_blank" className="button button-success">
+      {message}
+    </a>
   );
 };
 

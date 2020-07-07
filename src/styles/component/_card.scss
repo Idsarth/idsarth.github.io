@@ -59,6 +59,11 @@
     margin-left: .4rem;
   }
 
+  &-skill-alt {
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+  }
+
   @include from(md) {
     &-body {
       flex-direction: row;

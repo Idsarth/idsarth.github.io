@@ -7,7 +7,7 @@ import Button from './button.component';
 
 const Card = (props) => {
   const {
-    title, avatar, children, className,
+    title, children, className,
   } = props;
 
   return (
@@ -35,12 +35,21 @@ const Card = (props) => {
         >
           <FaUserAstronaut size={20} color="#c8cdd0" />
         </Category>
-        <Category
-          title="Github"
-          subtitle="Projects"
-        >
-          <FaGithub size={20} color="#c8cdd0" />
-        </Category>
+        <a rel="noreferrer" target="_blank" href="https://github.com/Idsarth">
+          <Category
+            title="Github"
+            subtitle="Projects"
+          >
+            <FaGithub size={20} color="#c8cdd0" />
+          </Category>
+        </a>
+
+        {/* <Category */}
+        {/*  title="Github" */}
+        {/*  subtitle="Projects" */}
+        {/* > */}
+        {/*  <FaGithub size={20} color="#c8cdd0" /> */}
+        {/* </Category> */}
 
         <Button
           message="Download CV"

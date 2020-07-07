@@ -1,0 +1,9 @@
+.subtitle {
+  &-content {
+    h2 {
+      color: var(--text-color-lighter);
+      font-size: var(--h3-font-size);
+      font-weight: 500;
+    }
+  }
+}

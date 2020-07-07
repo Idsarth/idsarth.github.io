@@ -3,7 +3,6 @@ import { FaAddressCard } from 'react-icons/fa';
 
 import Title from '../components/title.component';
 import Card from '../components/card.component';
-import CardSkill from '../components/card-skill.component';
 
 const HomePage = () => (
   <div className="container l-layout">
@@ -25,10 +24,6 @@ const HomePage = () => (
         </p>
       </Card>
     </main>
-    <section className="l-layout">
-      <Title title="Skills" />
-      <CardSkill />
-    </section>
   </div>
 );
 

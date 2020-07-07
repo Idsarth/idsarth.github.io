@@ -4,7 +4,7 @@ import { FiMenu } from 'react-icons/fi';
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
-  const handleShowNavbar = () => {
+  const handleShowNavBar = () => {
     setToggle(!toggle);
   };
 
@@ -14,13 +14,12 @@ const NavBar = () => {
         <div className="navbar-brand">
           <span className="navbar-name">Idsarth</span>
         </div>
-        <div onClick={handleShowNavbar} className="navbar-toggle">
+        <div onClick={handleShowNavBar} className="navbar-toggle">
           <FiMenu className="navbar-icon" size={30} />
         </div>
         <ul className={toggle ? 'navbar-list navbar-show' : 'navbar-list'}>
           <li className="navbar-item">
             <NavLink
-              activeClassName="navbar-link-active"
               className="navbar-link"
               to="/"
             >
@@ -29,29 +28,10 @@ const NavBar = () => {
           </li>
           <li className="navbar-item">
             <NavLink
-              activeClassName="navbar-link-active"
               className="navbar-link"
               to="/resume"
             >
               Resume
-            </NavLink>
-          </li>
-          <li className="navbar-item">
-            <NavLink
-              activeClassName="navbar-link-active"
-              className="navbar-link"
-              to="/portfolio"
-            >
-              Portfolio
-            </NavLink>
-          </li>
-          <li className="navbar-item">
-            <NavLink
-              activeClassName="navbar-link-active"
-              className="navbar-link"
-              to="/contact"
-            >
-              Contact Me
             </NavLink>
           </li>
         </ul>
